@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { ArrowRight, Instagram, Twitter, Facebook } from 'lucide-react';
 import { FaArrowRight } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -64,9 +66,9 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} ATELIER Studio. All rights reserved.</p>
         
         <div className="flex space-x-6">
-          <a href="#" className="hover:text-white transition" aria-label="Instagram"><Instagram className="w-4 h-4" /></a>
-          <a href="#" className="hover:text-white transition" aria-label="Twitter"><Twitter className="w-4 h-4" /></a>
-          <a href="#" className="hover:text-white transition" aria-label="Facebook"><Facebook className="w-4 h-4" /></a>
+          <a href="#" className="hover:text-white transition" aria-label="Instagram"><FaInstagram className="w-4 h-4" /></a>
+          <a href="#" className="hover:text-white transition" aria-label="Twitter"><FaXTwitter className="w-4 h-4" /></a>
+          <a href="#" className="hover:text-white transition" aria-label="Facebook"><FaFacebookF className="w-4 h-4" /></a>
         </div>
       </div>
     </footer>
