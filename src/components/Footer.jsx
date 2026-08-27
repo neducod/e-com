@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Instagram, Twitter, Facebook } from 'lucide-react';
+// import { ArrowRight, Instagram, Twitter, Facebook } from 'lucide-react';
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -51,7 +52,7 @@ export default function Footer() {
               className="bg-transparent border-none text-white text-xs placeholder-neutral-600 focus:outline-none w-full"
             />
             <button type="submit" aria-label="Subscribe" className="text-neutral-400 hover:text-white transition pl-2">
-              <ArrowRight className="w-4 h-4" />
+                <FaArrowRight className="w-4 h-4" />
             </button>
           </form>
         </div>
