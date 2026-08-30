@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Search, User, ShoppingBag, ArrowRight } from 'lucide-react';
+//new import added
+import { NavLink } from 'react-router-dom';
 
 const SLIDES = [
   {
@@ -42,6 +44,15 @@ export default function Header() {
 
   const activeSlide = SLIDES[currentSlide];
 
+//new code added
+  const navLinkStyle = ({ isActive }) =>
+    `transition-colors ${
+      isActive
+        ? 'text-black font-extrabold border-b border-black pb-0.5'
+        : 'hover:text-black'
+  }`;
+//new code added
+
   return (
     <div className="w-full font-sans bg-[#F4F4F5] text-slate-800 min-h-screen relative overflow-hidden select-none">
       
@@ -60,15 +71,28 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Links */}
-        <div className="hidden md:flex items-center space-x-10 text-xs font-bold tracking-widest text-slate-600 uppercase">
+        {/* <div className="hidden md:flex items-center space-x-10 text-xs font-bold tracking-widest text-slate-600 uppercase">
           <a href="#home" className="text-slate-900 hover:text-black transition-colors">Home</a>
           <a href="#products" className="hover:text-black transition-colors">Products</a>
           <a href="#about" className="hover:text-black transition-colors">About Us</a>
           <a href="#contact" className="hover:text-black transition-colors">Contact Us</a>
-        </div>
+        </div> */}
 
-        {/* Search & Actions */}
+<div className="hidden md:flex items-center space-x-10 text-xs font-bold tracking-widest text-slate-600 uppercase">
+      <NavLink to="/" className={navLinkStyle}>
+        Home
+      </NavLink>
+      <NavLink to="/shop" className={navLinkStyle}>
+        Products
+      </NavLink>
+      <NavLink to="/collections" className={navLinkStyle}>
+        Collections
+      </NavLink>
+      <NavLink to="/about" className={navLinkStyle}>
+        About Us
+      </NavLink>
+    </div>
+
         <div className="flex items-center space-x-4">
           <div className="relative hidden sm:block">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
