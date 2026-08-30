@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, User, ShoppingBag, ArrowRight, Instagram, Twitter, Facebook } from 'lucide-react';
+// import { Search, User, ShoppingBag, ArrowRight, Instagram, Twitter, Facebook } from 'lucide-react';
 
 // Sample Data for Bestsellers
 const BESTSELLERS = [
@@ -69,7 +69,7 @@ export default function HomePage() {
           {/* Search & Utility Icons */}
           <div className="flex items-center space-x-4">
             <div className="relative hidden sm:block">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={15} />
+              {/* <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={15} /> */}
               <input
                 type="text"
                 placeholder="Search catalogue"
@@ -78,11 +78,11 @@ export default function HomePage() {
             </div>
 
             <button aria-label="Account" className="p-2.5 bg-[#3F444E] text-white rounded-full hover:bg-slate-700 transition-colors">
-              <User size={15} />
+              {/* <User size={15} /> */}
             </button>
 
             <button aria-label="Cart" className="relative p-2.5 bg-[#3F444E] text-white rounded-full hover:bg-slate-700 transition-colors">
-              <ShoppingBag size={15} />
+              {/* <ShoppingBag size={15} /> */}
               <span className="absolute -top-1 -right-1 bg-white text-slate-900 border border-slate-200 text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
                 2
               </span>
@@ -117,7 +117,7 @@ export default function HomePage() {
             className="group flex items-center space-x-3 bg-white text-slate-900 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-slate-200 transition-all duration-300"
           >
             <span>Shop the Collection</span>
-            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            {/* <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /> */}
           </a>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function HomePage() {
           </div>
           <a href="#" className="mt-4 md:mt-0 text-xs font-bold tracking-[0.15em] text-slate-600 hover:text-black uppercase flex items-center space-x-2">
             <span>View All Products (20)</span>
-            <ArrowRight size={14} />
+            {/* <ArrowRight size={14} /> */}
           </a>
         </div>
 
@@ -175,7 +175,7 @@ export default function HomePage() {
               <h3 className="text-3xl sm:text-4xl font-black uppercase tracking-tight mt-1 mb-4">Structured Totes</h3>
               <span className="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-white group-hover:underline">
                 <span>Explore Category</span>
-                <ArrowRight size={14} />
+                {/* <ArrowRight size={14} /> */}
               </span>
             </div>
           </div>
@@ -218,11 +218,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ------------------ 5. FOOTER (DARK MODE) ------------------ */}
-      <footer className="w-full bg-[#0a0a0a] text-[#8e8e8e] pt-20 pb-12 px-6 lg:px-12 selection:bg-white selection:text-black">
+      {/* <footer className="w-full bg-[#0a0a0a] text-[#8e8e8e] pt-20 pb-12 px-6 lg:px-12 selection:bg-white selection:text-black">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-neutral-900">
           
-          {/* Column 1: Brand Info */}
           <div className="md:col-span-4 space-y-4">
             <h4 className="text-white font-bold tracking-[0.2em] uppercase text-sm">ATELIER</h4>
             <p className="text-xs text-neutral-400 leading-relaxed font-light max-w-sm">
@@ -230,7 +228,6 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Column 2: Explore */}
           <div className="md:col-span-2 space-y-3 text-xs tracking-[0.15em] uppercase">
             <h5 className="text-white font-bold mb-4">Explore</h5>
             <ul className="space-y-2.5">
@@ -240,7 +237,6 @@ export default function HomePage() {
             </ul>
           </div>
 
-          {/* Column 3: Client Care */}
           <div className="md:col-span-2 space-y-3 text-xs tracking-[0.15em] uppercase">
             <h5 className="text-white font-bold mb-4">Client Care</h5>
             <ul className="space-y-2.5">
@@ -251,7 +247,6 @@ export default function HomePage() {
             </ul>
           </div>
 
-          {/* Column 4: Newsletter */}
           <div className="md:col-span-4 space-y-4">
             <h5 className="text-white font-bold tracking-[0.2em] uppercase text-xs">Newsletter</h5>
             <p className="text-xs text-neutral-400 font-light">
@@ -266,24 +261,17 @@ export default function HomePage() {
                 className="w-full bg-transparent border-b border-neutral-800 pb-2 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white transition-colors"
               />
               <button type="submit" aria-label="Subscribe" className="absolute right-0 bottom-2 text-neutral-400 hover:text-white transition-colors">
-                <ArrowRight size={16} />
               </button>
             </form>
           </div>
         </div>
 
-        {/* Bottom Credits */}
         <div className="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 space-y-4 sm:space-y-0">
           <div>
             © 2026 ATELIER Studio. All rights reserved.
           </div>
-          <div className="flex items-center space-x-6">
-            <a href="#" aria-label="Instagram" className="hover:text-white transition-colors"><Instagram size={16} /></a>
-            <a href="#" aria-label="Twitter" className="hover:text-white transition-colors"><Twitter size={16} /></a>
-            <a href="#" aria-label="Facebook" className="hover:text-white transition-colors"><Facebook size={16} /></a>
-          </div>
         </div>
-      </footer>
+      </footer> */}
 
     </div>
   );
