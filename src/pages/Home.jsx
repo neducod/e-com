@@ -48,48 +48,7 @@ export default function HomePage() {
         Free ground shipping on orders over $500
       </div>
 
-      {/* ------------------ NAVBAR ------------------ */}
-      <nav className="sticky top-0 z-50 w-full bg-[#F4F4F5]/90 backdrop-blur-md border-b border-slate-200/80 transition-all">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <a href="#" className="flex items-center text-slate-900 font-extrabold text-2xl tracking-tighter uppercase">
-              <span className="text-3xl font-black mr-1">K</span>KRUDCUP
-            </a>
-          </div>
-
-          {/* Nav Links */}
-          <div className="hidden md:flex items-center space-x-10 text-xs font-bold tracking-[0.15em] text-slate-600 uppercase">
-            <a href="#shop" className="text-slate-900 hover:text-black transition-colors">Shop All (20)</a>
-            <a href="#categories" className="hover:text-black transition-colors">Categories</a>
-            <a href="#about" className="hover:text-black transition-colors">Manifesto</a>
-            <a href="#contact" className="hover:text-black transition-colors">Contact</a>
-          </div>
-
-          {/* Search & Utility Icons */}
-          <div className="flex items-center space-x-4">
-            <div className="relative hidden sm:block">
-              {/* <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={15} /> */}
-              <input
-                type="text"
-                placeholder="Search catalogue"
-                className="pl-9 pr-4 py-2 w-48 lg:w-60 bg-white text-xs rounded-full border border-slate-200 focus:outline-none focus:border-slate-400 text-slate-700 placeholder:text-slate-400 transition-all"
-              />
-            </div>
-
-            <button aria-label="Account" className="p-2.5 bg-[#3F444E] text-white rounded-full hover:bg-slate-700 transition-colors">
-              {/* <User size={15} /> */}
-            </button>
-
-            <button aria-label="Cart" className="relative p-2.5 bg-[#3F444E] text-white rounded-full hover:bg-slate-700 transition-colors">
-              {/* <ShoppingBag size={15} /> */}
-              <span className="absolute -top-1 -right-1 bg-white text-slate-900 border border-slate-200 text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
-                2
-              </span>
-            </button>
-          </div>
-        </div>
-      </nav>
+    
 
       {/* ------------------ 1. HERO SECTION ------------------ */}
       <section className="relative w-full h-[85vh] min-h-[600px] bg-slate-900 text-white flex items-center justify-center overflow-hidden">
@@ -217,61 +176,6 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-
-      {/* <footer className="w-full bg-[#0a0a0a] text-[#8e8e8e] pt-20 pb-12 px-6 lg:px-12 selection:bg-white selection:text-black">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-neutral-900">
-          
-          <div className="md:col-span-4 space-y-4">
-            <h4 className="text-white font-bold tracking-[0.2em] uppercase text-sm">ATELIER</h4>
-            <p className="text-xs text-neutral-400 leading-relaxed font-light max-w-sm">
-              Architectural silhouettes, premium materials, and timeless design. Crafted for the intentional minimalist.
-            </p>
-          </div>
-
-          <div className="md:col-span-2 space-y-3 text-xs tracking-[0.15em] uppercase">
-            <h5 className="text-white font-bold mb-4">Explore</h5>
-            <ul className="space-y-2.5">
-              <li><a href="#" className="hover:text-white transition-colors">Shop All (20)</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Collections</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Our Story</a></li>
-            </ul>
-          </div>
-
-          <div className="md:col-span-2 space-y-3 text-xs tracking-[0.15em] uppercase">
-            <h5 className="text-white font-bold mb-4">Client Care</h5>
-            <ul className="space-y-2.5">
-              <li><a href="#" className="hover:text-white transition-colors">Shipping & Returns</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Care Guide</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Sustainability</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          <div className="md:col-span-4 space-y-4">
-            <h5 className="text-white font-bold tracking-[0.2em] uppercase text-xs">Newsletter</h5>
-            <p className="text-xs text-neutral-400 font-light">
-              Subscribe to receive private preview access to new releases.
-            </p>
-            <form onSubmit={(e) => e.preventDefault()} className="relative pt-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-transparent border-b border-neutral-800 pb-2 text-xs text-white placeholder:text-neutral-600 focus:outline-none focus:border-white transition-colors"
-              />
-              <button type="submit" aria-label="Subscribe" className="absolute right-0 bottom-2 text-neutral-400 hover:text-white transition-colors">
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 space-y-4 sm:space-y-0">
-          <div>
-            © 2026 ATELIER Studio. All rights reserved.
-          </div>
-        </div>
-      </footer> */}
 
     </div>
   );
