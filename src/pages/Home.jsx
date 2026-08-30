@@ -50,36 +50,6 @@ export default function HomePage() {
 
     
 
-      {/* ------------------ 1. HERO SECTION ------------------ */}
-      <section className="relative w-full h-[85vh] min-h-[600px] bg-slate-900 text-white flex items-center justify-center overflow-hidden">
-        {/* Editorial Background Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20 z-10" />
-        
-        {/* Stylized Visual Placeholder (Mimicking Editorial Shoot) */}
-        <div className="absolute inset-0 bg-[#2A2D34] flex items-center justify-center scale-105 transform hover:scale-100 transition-transform duration-1000">
-          <div className="w-80 h-[500px] bg-[#536253] rounded-t-full rounded-b-[60px] shadow-2xl opacity-40 blur-sm transform -rotate-6" />
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-20 text-center max-w-3xl px-6 flex flex-col items-center">
-          <span className="text-xs uppercase tracking-[0.3em] text-neutral-300 font-semibold mb-4">
-            Autumn / Winter 2026
-          </span>
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-tight mb-6">
-            Elevated Everyday Carry
-          </h1>
-          <p className="text-sm sm:text-base text-neutral-300 font-light max-w-lg mb-8 leading-relaxed">
-            Architectural silhouettes crafted from vegetable-tanned Italian leather. Designed for intentional living.
-          </p>
-          <a
-            href="#shop"
-            className="group flex items-center space-x-3 bg-white text-slate-900 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-slate-200 transition-all duration-300"
-          >
-            <span>Shop the Collection</span>
-            {/* <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" /> */}
-          </a>
-        </div>
-      </section>
 
       {/* ------------------ 2. FEATURED BESTSELLERS ------------------ */}
       <section id="shop" className="max-w-7xl mx-auto px-6 lg:px-12 py-28">
