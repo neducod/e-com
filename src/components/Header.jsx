@@ -83,7 +83,7 @@ export default function Header() {
         Home
       </NavLink>
       <NavLink to="/shop" className={navLinkStyle}>
-        Products
+        Shop
       </NavLink>
       <NavLink to="/collections" className={navLinkStyle}>
         Collections
