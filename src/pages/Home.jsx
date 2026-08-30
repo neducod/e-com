@@ -43,14 +43,6 @@ export default function HomePage() {
   return (
     <div className="w-full font-sans bg-[#F4F4F5] text-slate-800 antialiased selection:bg-slate-900 selection:text-white">
       
-      {/* ------------------ ANNOUNCEMENT BAR ------------------ */}
-      <div className="w-full bg-[#3F444E] text-white text-[10px] sm:text-xs tracking-[0.2em] py-2 text-center uppercase font-medium">
-        Free ground shipping on orders over $500
-      </div>
-
-    
-
-
       {/* ------------------ 2. FEATURED BESTSELLERS ------------------ */}
       <section id="shop" className="max-w-7xl mx-auto px-6 lg:px-12 py-28">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-slate-200 pb-6">
