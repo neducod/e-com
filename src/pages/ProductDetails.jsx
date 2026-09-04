@@ -1,12 +1,10 @@
 import React from 'react';
 
 function App() {
-  return (
+   return (
     <div className="app-container">
-      <h1>Hello, World!</h1>
-      <p>Welcome to your new React application.</p>
-    </div>
-  );
-}
+     </div>
+   );
+    }
 
-export default App;
+ export default App;
