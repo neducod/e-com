@@ -37,6 +37,9 @@ const BESTSELLERS = [
   },
 ];
 
+
+
+
 export default function HomePage() {
   const [email, setEmail] = useState('');
 
@@ -45,7 +48,6 @@ export default function HomePage() {
 
     <main className="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-24 grid grid-cols-1 lg:grid-cols-12 items-center relative z-10">
         
-    {/* Left Copy Container */}
     <div className="lg:col-span-6 space-y-6 lg:pr-8 min-h-[380px] flex flex-col justify-between">
       <div>
         <span className="text-xs font-semibold tracking-widest text-slate-500 uppercase transition-all duration-300">
